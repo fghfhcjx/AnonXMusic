@@ -41,6 +41,22 @@ from config import BANNED_USERS, lyrical
     & filters.group
     & ~BANNED_USERS
 )
+@app.on_message(
+    filters.command(
+        [
+            "تشغيل",
+            "فيديو",
+            "شغل",
+            
+            
+            
+            
+           
+        ],""
+    )
+    & filters.group
+    & ~BANNED_USERS
+)
 @PlayWrapper
 async def play_commnd(
     client,
